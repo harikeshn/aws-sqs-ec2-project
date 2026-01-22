@@ -30,3 +30,33 @@ Using SQS, the producer and consumer work independently, improving reliability a
 
 ## Result
 Messages are successfully sent to and retrieved from Amazon SQS using an EC2-hosted Node.js application.
+
+
+SETUP AND RUN STEPS
+
+1. Launch an EC2 instance (Amazon Linux)
+2. Attach an IAM Role with SQS Full Access
+
+3. Install Node.js
+Run these commands:
+curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
+sudo yum install -y nodejs
+
+4. Install required packages
+Run:
+npm init -y
+npm install express aws-sdk body-parser ejs
+
+5. Start the application
+Run:
+node app.js
+
+6. Open the application in browser
+http://EC2-PUBLIC-IP:3000
+
+
+SECURITY
+
+- IAM Role is used instead of saving AWS keys in code
+- Security Group allows port 3000
+
