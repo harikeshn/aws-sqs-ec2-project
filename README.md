@@ -32,6 +32,8 @@ Using SQS, the producer and consumer work independently, improving reliability a
 Messages are successfully sent to and retrieved from Amazon SQS using an EC2-hosted Node.js application.
 
 
+
+
 SETUP AND RUN STEPS
 
 1. Launch an EC2 instance (Amazon Linux)
