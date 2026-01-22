@@ -33,7 +33,6 @@ Messages are successfully sent to and retrieved from Amazon SQS using an EC2-hos
 
 
 
-
 SETUP AND RUN STEPS
 
 1. Launch an EC2 instance (Amazon Linux)
